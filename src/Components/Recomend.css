@@ -1,0 +1,40 @@
+.items {
+    height: 200px;
+}
+
+.items .img-box {
+    border-radius: 20px;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.recom_1 {
+    background-image: linear-gradient(to bottom, #000000, #232323, #414141, #616161, #838383);
+}
+.img-box p {
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    translate: 0 -50%;
+    font-weight: 600;
+}
+.img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+.recom_1 .recomend-text{
+    color: white;
+}
+.recom_2 {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.recom_2 .recomend-text{
+    color: rgb(255, 255, 255);
+}

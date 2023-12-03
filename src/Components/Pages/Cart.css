@@ -1,0 +1,54 @@
+.cart-container {
+    min-height: 80vh;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #869899;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.cart svg {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.cart img {
+    aspect-ratio: 1/1;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.cart .details .cartName {
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.cart .details .buttons {
+    flex-direction: column;
+}
+
+.cart .details .buttons input {
+    border: 2px solid #dfdfdf;
+    background-color: #dfdfdf;
+    text-align: center;
+}
+
+.cart .details .buttons button.btn-outline-warning,
+.cart .details .buttons button.btn-primary {
+    margin-top: 0.3rem;
+    width: 100%;
+}
+
+.cart .details .buttons button.btn-primary {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s linear;
+}

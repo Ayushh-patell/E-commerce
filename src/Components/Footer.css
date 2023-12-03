@@ -1,0 +1,34 @@
+.Footer {
+    background-color: #040309;
+  color: white;
+}
+.Footer ul {
+    padding: 0;
+}
+.Footer ul li {
+    list-style: none;
+}
+.Footer ul li a, .Footer ul li {
+    color: rgb(184, 184, 184);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.Footer ul li a:hover, .Footer ul li:hover {
+    color: rgb(255, 255, 255);
+    text-decoration:underline;
+}
+.socials {
+    font-size: 2rem;
+  text-align: right;
+  padding: 0 1rem;
+}
+.socials a {
+    color: white;
+}
+.socials ion-icon {
+    margin: 0 0.4rem;
+    transition: scale 0.1s ease-out;
+}
+.socials ion-icon:hover {
+    scale: 1.2;
+}

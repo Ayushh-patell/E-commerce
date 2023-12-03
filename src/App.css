@@ -1,38 +1,184 @@
+body {
+  background-color: rgb(208, 208, 208);
+}
+
+p {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_container {
+  min-height: 80vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.landing_title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width:768px) {
+  .landing_title {
+    font-size: 1.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navExpand {
+  max-height: 150px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.152);
+}
+
+.navbar {
+  padding: 0.2rem 3rem;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+  max-height: 54px;
+  overflow-y: hidden;
+  transition: max-height 0.4s linear;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 0 5px #0000007d;
+}
+
+.nav-scroll {
+  box-shadow: 0 0 10px rgb(92, 92, 92);
+  position: fixed;
+  top: 1rem;
+  left: 0.5rem;
+  border-radius: 40px;
+  padding: 0.5rem 2rem;
+  width: fit-content;
+}
+
+.navbar .brand {
+  margin: 0 0.2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.navbar .brand img {
+  height: 32px;
+}
+
+@media screen and (max-width:576px) {
+  .navbar {
+    padding: 0.2rem 1rem;
+  }
+
+  .navbar .brand {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .right_icon {
+    margin: auto;
+    flex-direction: column;
+  }
+}
+
+.navbar input {
+  border-radius: 20px;
+  padding: 0.3rem;
+  border: 1px solid #0000002e;
+}
+
+.navbar .right_icon {
   display: flex;
-  flex-direction: column;
+}
+
+.navbar .search_input {
+  display: flex;
+}
+
+.navbar .right_icon ion-icon {
+  font-size: 1.5rem;
+  padding: 0.2rem 0.4rem;
+  transition: border-bottom 0.3s linear;
+  position: relative;
+  margin: 0 0.1rem;
+
+}
+
+.navbar .right_icon ion-icon::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s linear;
+}
+
+.navbar .right_icon ion-icon:hover::after {
+  width: 100%;
+}
+
+.navbar .nav_btn {
+  position: absolute;
+  right: 1rem;
+  padding: 0.3rem;
+  aspect-ratio: 1/1;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  top: 9px;
+}
+.main_container {
+  padding-top: 60px;
+  background-color: white;
+  padding-bottom: 1px;
+}
+
+
+.menu {
+  display: flex;
+  padding: 0.3rem 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.menu .category {
+  color: black;
+  min-width: 120px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 3px solid black;
+  border-radius: 50px;
+  width: 10%;
+  padding: 0.2rem;
+  transition: all 0.2s ease-out;
+}
+
+.menu .category:hover {
   color: white;
+  border: 3px solid #14a627;
+  background-color: #14A627;
 }
 
-.App-link {
-  color: #61dafb;
+.landing_img {
+  height: 60vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: none;
+}
+
+.items {
+  /* opacity: 0; */
+  translate: 0 100px;
+}
+
+.items .img_box {
+
+  border-radius: 10px;
 }

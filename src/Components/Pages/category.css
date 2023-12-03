@@ -1,0 +1,80 @@
+.card_Prod {
+    background-color: white;
+  border-radius: 15px;
+}
+
+.Heading {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 10px #1212122e;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+
+.card_filter {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.card_filter_text {
+    color: grey;
+    cursor: pointer;
+
+}
+
+.Active {
+    color: black;
+    font-weight: 600;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    column-gap: 10px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.card {
+    width: 250px;
+    border: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.card a {
+    height: 100%;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid #00000036;
+    transition: all 0.2s linear;
+}
+.card:hover img {
+    transform: scale(1.15);
+}
+
+.card .Detail {
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin: 0 0.6rem;
+    border-radius: 9px;
+}
+
+.card .Detail .name {
+    font-weight: 600;
+}
