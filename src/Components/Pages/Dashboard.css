@@ -36,3 +36,12 @@
   right: 10px;
   color: hotpink;
 }
+
+@media screen and (max-width:400px) {
+  .userDetail .favourites .favourite {
+    padding-top: 3rem;
+  }
+  .userDetail .favourites .favourite img {
+    height: 110px;
+  }
+}

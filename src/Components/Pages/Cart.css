@@ -52,3 +52,12 @@
     pointer-events: none;
     transition: all 0.2s linear;
 }
+
+@media screen and (max-width:500px) {
+    .cart-container .cart {
+        flex-direction: column;
+    }
+    .cart-container .cart .buttons input {
+        width: 75%;
+    }
+}

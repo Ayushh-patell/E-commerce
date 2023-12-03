@@ -394,6 +394,13 @@
 }
 
 @media screen and (max-width:400px) {
+    .prod-details .buttons  {
+        flex-direction: column;
+    }
+    .additional_content .spec {
+        flex-direction: column;
+    }
+
     .additional_content .total-rating {
         flex-direction: column;
     }
